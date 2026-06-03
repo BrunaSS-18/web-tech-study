@@ -52,7 +52,7 @@ header h1 {
     display: block;
 }
 
-.form-group input[type="text"] {
+.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="tel"] {
     border: 2px solid rgb(176, 174, 179);
     width: 95%;
     height: 25px;
