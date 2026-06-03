@@ -1,3 +1,21 @@
 body {
     background-color: rgb(221, 182, 236);
 }
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    border: 1px solid;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    background: rgb(219, 144, 235);
+}
+
+header h1 {
+    font-size: 35px;
+    color: aliceblue;
+    padding: 25px;
+}
