@@ -2,12 +2,13 @@
 
 const inputNota = document.getElementById("nota");
 const resultado = document.getElementById("resultado");
-const message = document.getElementById("message")
+const message = document.getElementById("message");
+const inputNome = document.getElementById("nome");
 
 function resultadoNotaClick(event){
     event.preventDefault()
     const inputNotaValue = inputNota.value;
-    console.log(inputNota.value)
+    const inputNome = inputNome.value;
 
     //Validação
     if (inputNotaValue == ""){
@@ -19,7 +20,7 @@ function resultadoNotaClick(event){
     //Lógica
     if (inputNotaValue >= 6) {
         //alert("Você está aprovado");
-        resultado.innerHTML = "Aprovado"
+        resultado.innerHTML = `O aluno ${inputNome} aprovado`
     } 
     else {
         //alert("Você está reprovado");
