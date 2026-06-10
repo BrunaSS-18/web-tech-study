@@ -10,18 +10,17 @@
 <body>
     <main class="container">
         <form>
+
             <article class="form-control">
                 <label for="nome">Digite o nome do aluno:</label>
                 <input type="text" id="nome"/>
-            </article>
 
-            <article class="form-control">
                 <label for="nota">Digite nota do aluno:</label>
                 <input type="number" min="0" id="nota" />
             </article>
 
             <section id="message">
-                <span>Digite o nome e a nota do aluno</span>
+                <span>Digite nos campo(os) vazios</span>
             </section>
 
             <button id="verifica-nota" onclick="resultadoNotaClick(event)"> Verificar Nota</button>

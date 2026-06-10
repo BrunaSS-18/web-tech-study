@@ -8,24 +8,24 @@ const inputNome = document.getElementById("nome");
 function resultadoNotaClick(event){
     event.preventDefault()
     const inputNotaValue = inputNota.value;
-    const inputNome = inputNome.value;
+    const inputNomeValue = inputNome.value;
 
     //Validação
-    if (inputNotaValue == ""){
+    if (inputNotaValue && inputNomeValue == ""){
         //alert("O campo está vázio")
         message.style.display = "block";
         return false
     }
 
+
     //Lógica
     if (inputNotaValue >= 6) {
         //alert("Você está aprovado");
-        resultado.innerHTML = `O aluno ${inputNome} aprovado`
+        resultado.innerHTML = `O aluno ${inputNomeValue} aprovado`
     } 
     else {
         //alert("Você está reprovado");
-        resultado.innerHTML = "Reprovado"
+        resultado.innerHTML = `O aluno ${inputNomeValue} reprovado`
     }
 
-    inputNota.value = ""
 }
