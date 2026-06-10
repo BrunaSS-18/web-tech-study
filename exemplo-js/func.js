@@ -15,5 +15,6 @@ function mostrarNome(nome) {
 minhaFuncao();
 pularLinha();
 minhaFuncao();
+pularLinha();
 mostrarNome("Bruna");
 mostrarNome("Guilherme");
