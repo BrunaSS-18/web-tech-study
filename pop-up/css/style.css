@@ -10,9 +10,10 @@ button {
   border: 0;
   cursor: pointer;
   padding: 6px 10px;
+  border-radius: 10px 10px 10px 10px;
 }
 
-.poupup-wrapper {
+.popup-wrapper {
   background: rgba(0, 0, 0, .5);
   position: fixed;
   top: 0;
@@ -28,8 +29,9 @@ button {
   max-width: 300px;
   margin: 10% auto;
   padding: 20px;
-  background: white;
+  background: rgb(235, 174, 174);
   position: relative;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .popup a {
@@ -38,6 +40,7 @@ button {
   padding: 6px 10px;
   text-decoration: none;
   background-color: crimson;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .popup-close {
