@@ -17,5 +17,8 @@ salvarBtn.addEventListener('click', function(event){
     localStorage.setItem(chave, valor)
 
     //Limpar campo após salvar
-    campo.value = ""
+    campo.value = ''
+
+    //exibir os valores salvos
+    carregarValoresSalvos()
 });
