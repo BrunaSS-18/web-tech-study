@@ -1,24 +1,14 @@
 import Header from "./Components/Header"
+import Card from "./Components/Card"
 
 function App() {
 
   return (
     <>
 
-      <Header />
+      <Header/>
 
-      <section>
-        <article>
-          <h1>Lorem Ipsum</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam!</p>
-        </article>
-     
-        <article>
-          <h1>Lorem Ipsum</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam!</p>
-        </article>
-        <hr />
-      </section>
+      <Card/>
 
       <footer>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam!</p>
