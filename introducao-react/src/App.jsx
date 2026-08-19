@@ -6,7 +6,11 @@ function App() {
   return (
     <>
 
-      <Header/>
+      <Header title="Meu site"/>
+
+      <Header title="Lorem ipsum"/>
+
+      <Header title="introdução React"/>
 
       <Card/>
 
