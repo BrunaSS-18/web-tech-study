@@ -1,5 +1,7 @@
 import Header from "./Components/Header"
 import Card from "./Components/Card"
+import Footer from "./Components/Footer"
+import Banner from "./Components/Banner"
 
 function App() {
 
@@ -12,11 +14,15 @@ function App() {
 
       <Header title="introdução React"/>
 
+      <Banner>
+        <h1>Seja bem-vindo!</h1>   
+        <p>Aqui você encontra as melhores cachorrinhos para a adoção</p>    
+      </Banner>
+
       <Card/>
 
-      <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam!</p>
-      </footer>
+      <Footer title="fim da página"/>
+
     </>
   )
 }
