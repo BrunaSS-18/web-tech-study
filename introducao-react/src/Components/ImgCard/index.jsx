@@ -1,5 +1,5 @@
-import "./ImgCardMT.css"
-import imgCard from "../assets/img-card-2.jpg"
+import "./ImgCard.css"
+import imgCard from "../../assets/img-card-2.jpg"
 
 const ImgCard = (props) => {
     return (
@@ -10,4 +10,4 @@ const ImgCard = (props) => {
     )
 }
 
-export default ImgCardMT
+export default ImgCard

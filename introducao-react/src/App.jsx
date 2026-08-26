@@ -1,4 +1,4 @@
-/*import Header from "./Components/Header"
+import Header from "./Components/Header"
 import Card from "./Components/Card"
 import Footer from "./Components/Footer"
 import Banner from "./Components/Banner"
@@ -31,30 +31,30 @@ function App() {
 }
 
 export default App
-*/
+
 
 /*Atividade*/
 
-import BannerMT from "./Components/MuayThai/BannerMT"
-import FooterMT from "./Components/MuayThai/FooterMT"
-import HeaderMT from "./Components/MuayThai/HeaderMT"
-import ImgCardMT from "./Components/MuayThai/ImgCardMT"
+// import BannerMT from "./Components/MuayThai/BannerMT"
+// import FooterMT from "./Components/MuayThai/FooterMT"
+// import HeaderMT from "./Components/MuayThai/HeaderMT"
+// import ImgCardMT from "./Components/MuayThai/ImgCardMT"
 
-function App() {
+// function App() {
 
-  return (
-    <>
-      <HeaderMT title="Muay Thai"/>
+//   return (
+//     <>
+//       <HeaderMT title="Muay Thai"/>
   
-      <BannerMT>
-        <h1>Seja bem-vindo ao site que fala sobre Muay Thai</h1>
-      </BannerMT>
+//       <BannerMT>
+//         <h1>Seja bem-vindo ao site que fala sobre Muay Thai</h1>
+//       </BannerMT>
 
-      <ImgCardMT/>
+//       <ImgCardMT/>
 
-      <FooterMT title="chegamos ao fim..."/>
-    </>
-  )
-}
+//       <FooterMT title="chegamos ao fim..."/>
+//     </>
+//   )
+// }
 
-export default App
+// export default App

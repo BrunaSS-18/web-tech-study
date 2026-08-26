@@ -1,7 +1,7 @@
 const Header = (props) => {
 
     const headerStyle = {
-        background: '#BEBEBE',
+        background: '#752180',
         padding: '20px',
         textAlign: 'center',
         borderBottom:'2px solid #696969'
@@ -10,7 +10,7 @@ const Header = (props) => {
     const titleStyle = {
         margin: 0,
         fontSize: '24px',
-        color: '#191970'
+        color: '#e9e9ee'
     }
 
     return(
