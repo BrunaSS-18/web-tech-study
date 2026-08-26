@@ -1,39 +1,41 @@
-import Header from "./Components/Header"
-import Card from "./Components/Card"
-import Footer from "./Components/Footer"
-import Banner from "./Components/Banner"
-import ImgCard from "./Components/ImgCard"
+// import Header from "./Components/Header"
+// import Card from "./Components/Card"
+// import Footer from "./Components/Footer"
+// import Banner from "./Components/Banner"
+// import ImgCard from "./Components/ImgCard"
+// import Count from "./Components/Count"
+// import Box from "./Components/Box"
 
-function App() {
+// function App() {
 
-  return (
-    <>
+//   return (
+//     <>
 
-      <Header title="Meu site"/>
+//       <Header title="Meu site"/>
 
-      <Header title="Lorem ipsum"/>
+//       <Count/>
+      
+//       <Box/>
 
-      <Header title="introdução React"/>
+//       <ImgCard caption="New Lorem Ipsum"/>
 
-      <ImgCard caption="New Lorem Ipsum"/>
+//       <Banner>
+//         <h1>Seja bem-vindo!</h1>
+//         <p>Aqui você encontra as melhores cachorrinhos para a adoção</p>
+//       </Banner>
 
-      <Banner>
-        <h1>Seja bem-vindo!</h1>   
-        <p>Aqui você encontra as melhores cachorrinhos para a adoção</p>    
-      </Banner>
+//       <Card/>
 
-      <Card/>
+//       <Footer title="fim da página"/>
 
-      <Footer title="fim da página"/>
+//     </>
+//   )
+// }
 
-    </>
-  )
-}
-
-export default App
+// export default App
 
 
-/*Atividade*/
+/*Atividade Muay Thai*/
 
 // import BannerMT from "./Components/MuayThai/BannerMT"
 // import FooterMT from "./Components/MuayThai/FooterMT"
@@ -58,3 +60,25 @@ export default App
 // }
 
 // export default App
+
+//Atividade Princesas
+
+import Header from "./Components/Princesas/Header"
+import Box from "./Components/Princesas/Box"
+import Footer from "./Components/Princesas/Footer"
+
+function App(){
+
+  return (
+    <>
+      <Header title= "Princesas"/>
+
+      <Box/>
+
+      <Footer title="Essas são as minhas top 6 Princesas da Disney"/>
+    
+    </>
+  )
+}
+
+export default App
