@@ -1,0 +1,18 @@
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  min-height: 75vh;
+}
+
+.sobre-title{
+    text-align: left;
+    color: rgb(42, 42, 110);
+    margin-bottom: 16px;
+}
+
+.sobre-text{
+    color: rgb(111, 112, 119);
+    font-size: 1.1rem;
+    line-height: 1.3;
+}

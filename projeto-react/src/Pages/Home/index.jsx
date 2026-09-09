@@ -1,4 +1,3 @@
-import React from 'react'
 import Box from "../../Components/Box"
 import img1 from "../../assets/img/montanha.jpg"
 import img2 from "../../assets/img/marCinza.jpg"
