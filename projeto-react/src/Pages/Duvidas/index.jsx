@@ -1,33 +1,30 @@
 import "./Duvidas.css"
 import "../../global.css"
+import { useState, useEffect } from 'react'
 
 export default function index() {
+    const [duvidas, setDuvidas] = useState([])
+
+    useEffect(() => {
+        fetch("http://localhost:3000/duvidas")
+            .then((response) => response.json())
+            .then((data) => setDuvidas(data))
+            .catch((error) => console.error(error));
+    }, [])
 
   return (
     <section className="duvida-container">
         <div className="duvida-section">
             <h2>Perguntas Frequentes</h2>
             
-            <div className="duvida-item">
-                <p className="pergunta">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <p className="resposta">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        {duvidas.map((duvida) => (
+            <div className="duvida-item" key={duvida.id}>
+                <p className="pergunta">{duvida.pergunta}</p>
+                <p className="resposta">{duvida.resposta}</p>
             </div>
+        ))} 
 
-            <div className="duvida-item">
-                <p className="pergunta">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <p className="resposta">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-
-            <div className="duvida-item">
-                <p className="pergunta">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <p className="resposta">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-
-            <div className="duvida-item">
-                <p className="pergunta">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <p className="resposta">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
+        </div>  
 
         <form className="duvida-form" onSubmit={(e) => e.preventDefault()}>
             <label className="duvida" for="duvida">Digite sua dúvida:</label>

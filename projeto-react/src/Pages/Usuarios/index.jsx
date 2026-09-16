@@ -1,0 +1,36 @@
+import React from 'react'
+import "./Usuarios.css"
+import { useState, useEffect } from 'react'
+
+export default function index() {
+    const [usuarios, setUsuarios] = useState([])
+
+    useEffect(() => {
+        fetch("http://localhost:3000/usuarios")
+            .then((response) => response.json())
+            .then((data) => setUsuarios(data))
+            .catch((error) => console.error(error));
+    }, [])
+
+  return (
+    <section className="container usuarios">
+      <h1> Lista de Usuarios</h1>
+
+      {usuarios.map((user) => (
+        <article className="content-usuarios" key={user.id}>
+            
+            <strong>Nome: {user.nome} </strong>
+            <br/>
+            <strong>Telefone: 11 {user.telefone} </strong>
+            <br/>
+            <strong>Email: {user.email} </strong>
+            <br/>
+
+            <button className="delete">Deletar</button>
+            <hr/>
+        </article>
+      ))}
+
+    </section>
+  )
+}
