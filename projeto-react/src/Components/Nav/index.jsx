@@ -27,7 +27,7 @@ export default function index() {
 
             <li>
                 <Link to="/duvidas">
-                    Duvidas
+                    Dúvidas
                 </Link>
             </li>
 
