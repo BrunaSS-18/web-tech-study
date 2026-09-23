@@ -1,8 +1,40 @@
 {
   "usuarios": [
-     { "nome": "João Silva", "telefone": "11999990001", "email": "joao.silva@gmail.com" },
-     { "nome": "Caio", "telefone": "44444444", "email": "caio@gmail.com" },
-     { "nome": "Juliana", "telefone": "55555555", "email": "juliana@gmail.com" }
+    {
+      "nome": "João Silva",
+      "telefone": "11999990001",
+      "email": "joao.silva@gmail.com",
+      "id": "LckBBNRPpAg"
+    },
+    {
+      "nome": "Caio",
+      "telefone": "44444444",
+      "email": "caio@gmail.com",
+      "id": "wUNRrfucZ6M"
+    },
+    {
+      "nome": "Juliana",
+      "telefone": "55555555",
+      "email": "juliana@gmail.com",
+      "id": "rLA0QUWkjZk"
+    },
+    {
+      "nome": "bruna",
+      "telefone": "11943196323",
+      "email": "bruna@gmail.com",
+      "id": "pHrLbOZbtck"
+    },
+    {
+      "nome": "kauana ",
+      "telefone": "11943196323",
+      "email": "kauana@gmail.com",
+      "id": "zU1QB9bez6o"
+    },
+    {
+      "nome": "luiza",
+      "email": "luiza@gmail.com",
+      "id": "U3yuBmArB7w"
+    }
   ],
   "duvidas": [
     {
@@ -47,5 +79,6 @@
       "titulo": "Pode ser usado além de páginas web Com o React Native",
       "descricao": "Os desenvolvedores podem criar aplicativos para Android e iOS utilizando conceitos e componentes semelhantes aos do React, compartilhando parte da lógica entre plataformas."
     }
-  ] 
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

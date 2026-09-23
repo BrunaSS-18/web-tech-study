@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import '../../../node_modules/react-toastify/dist/ReactToastify.css'
-import "./Cadastro.css"
 
 export default function index() {
   //Estado para armazenar os dados do formulário
   
   const[formData, setFormData] = useState({
     nome: "",
-    telefone: "",
     email: ""
   })
 
@@ -28,7 +26,7 @@ export default function index() {
     e.preventDefault()
 
   //Validação dos campos
-  if(formData.nome == "" || formData.telefone == "" || formData.email == "" ){
+  if(formData.nome == "" || formData.email == "" ){
     //alert("Todos os campos são obrigatórios!")
     toast.error("Todos os campos são obrigatórios!") //toast é um alerta de forma bonita
     return false
@@ -48,7 +46,6 @@ export default function index() {
         //Limpa o formulario após o envio
             setFormData({
                 nome: "",
-                telefone: "",
                 email: ""
             })
         }) 
@@ -56,7 +53,7 @@ export default function index() {
 
   return (
     <main className='container'>
-        <h1>Cadastro de Usuários</h1>
+        <h1>Cadastro para receber News</h1>
         <form className='formCadastro' onSubmit={handleSubmit}>
             <article className='form-control'>
                 <label htmlFor='nome'>Nome</label>
@@ -64,16 +61,6 @@ export default function index() {
                     type='text' 
                     name="nome" 
                     value={formData.nome}
-                    onChange={handleChange}
-                />
-            </article>
-
-            <article className='form-control'>
-                <label htmlFor='telefone'>Telefone</label>
-                <input 
-                    type='text' 
-                    name="telefone" 
-                    value={formData.telefone}
                     onChange={handleChange}
                 />
             </article>

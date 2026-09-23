@@ -37,6 +37,12 @@ export default function index() {
                 </Link>
             </li>
 
+            <li>
+                <Link to="/news">
+                    News
+                </Link>
+            </li>
+
         </ul>
     </nav>
 
