@@ -34,6 +34,11 @@
       "nome": "luiza",
       "email": "luiza@gmail.com",
       "id": "U3yuBmArB7w"
+    },
+    {
+      "nome": "bruna",
+      "email": "bruna@gmail.com",
+      "id": "EoVIkRa59hQ"
     }
   ],
   "duvidas": [
@@ -78,6 +83,18 @@
       "id": "5",
       "titulo": "Pode ser usado além de páginas web Com o React Native",
       "descricao": "Os desenvolvedores podem criar aplicativos para Android e iOS utilizando conceitos e componentes semelhantes aos do React, compartilhando parte da lógica entre plataformas."
+    }
+  ],
+  "news": [
+    {
+      "nome": "bruna",
+      "email": "bruna@gmail.com",
+      "id": "y5wZQRX0liw"
+    },
+    {
+      "nome": "kauana ",
+      "email": "kauana@gmail.com",
+      "id": "QzcpdXPoQ18"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

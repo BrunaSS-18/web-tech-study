@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import '../../../node_modules/react-toastify/dist/ReactToastify.css'
+import Listar from '../../Components/NewsListar'
 
 export default function index() {
   //Estado para armazenar os dados do formulário
@@ -33,7 +34,7 @@ export default function index() {
   }  
     
   //Enviando os dados para o backend como JSON
-    fetch("http://localhost:3000/usuarios", {
+    fetch("http://localhost:3000/news", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -43,6 +44,7 @@ export default function index() {
         .then((response) => response.json())
         .then((data) => {
             toast.success("Usuário cadastrado com sucesso")
+
         //Limpa o formulario após o envio
             setFormData({
                 nome: "",
@@ -79,6 +81,9 @@ export default function index() {
 
             <ToastContainer/>
         </form>
+
+        <Listar/>
+
     </main>
   )
 }

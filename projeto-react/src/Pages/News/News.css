@@ -1,0 +1,25 @@
+.secao-listarUsuarios{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+}
+
+.titulo-listagem {
+    color: rgb(42, 42, 110);
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.container-listagem {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #65809b;
+    padding: 20px;
+    border-radius: 5px;
+    color: #f1f1f1;
+}
