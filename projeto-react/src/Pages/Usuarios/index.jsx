@@ -12,21 +12,35 @@ export default function index() {
             .catch((error) => console.error(error));
     }, [])
 
+    const deleteUsuarios = (id) => {
+        fetch(`http://localhost:3000/usuarios/${id}`,{
+          method: "DELETE"
+        })
+        .then(() => {
+          setUsuarios(usuarios.filter((usuario) => usuario.id !== id));
+        })
+        .catch((error) => console.error(error))
+    }
+
   return (
     <section className="container usuarios">
       <h1> Lista de Usuarios</h1>
 
-      {usuarios.map((user) => (
-        <article className="content-usuarios" key={user.id}>
+      {usuarios.map((usuario) => (
+        <article className="content-usuarios" key={usuario.id}>
             
-            <strong>Nome: {user.nome} </strong>
+            <strong>Nome: {usuario.nome} </strong>
             <br/>
-            <strong>Telefone: 11 {user.telefone} </strong>
+            <strong>Telefone: 11 {usuario.telefone} </strong>
             <br/>
-            <strong>Email: {user.email} </strong>
+            <strong>Email: {usuario.email} </strong>
             <br/>
 
-            <button className="delete">Deletar</button>
+            <button 
+              className="delete" 
+              onClick={() => deleteUsuarios(usuario.id)}>
+              Deletar
+            </button>
             <hr/>
         </article>
       ))}
